@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ff4f81, #ff9a9e);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 110px;
+  height: 110px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal img, .modal video {
+  max-width: 90%;
+  max-height: 60%;
+  margin-bottom: 10px;
+}
+
+.modal span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* swipe animação */
+#imagemModal {
+  transition: 0.3s;
+}
+
+/* corações */
+.coracao {
+  position: fixed;
+  bottom: 0;
+  animation: subir 4s linear;
+}
+
+@keyframes subir {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}

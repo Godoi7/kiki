@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiki ❤️</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff4f81">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Feliz Aniversário, Kiki ❤️</h1>
+  <h2>Kiara Salomão Cosme</h2>
+
+  <p id="contador"></p>
+
+  <button onclick="tocarMusica()">🎵 Ativar Música</button>
+
+  <div class="galeria">
+    <img src="foto1.jpg" onclick="abrirMomento(1)">
+    <img src="foto2.jpg" onclick="abrirMomento(2)">
+    <img src="foto3.jpg" onclick="abrirMomento(3)">
+  </div>
+</div>
+
+<div id="modal" class="modal">
+  <span onclick="fecharModal()">X</span>
+
+  <img id="imagemModal">
+  
+  <video id="videoModal" controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <p id="textoModal"></p>
+</div>
+
+<audio id="musica" src="musica.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

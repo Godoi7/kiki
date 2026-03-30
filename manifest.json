@@ -1,0 +1,20 @@
+{
+  "name": "Kiki ❤️",
+  "short_name": "Kiki",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ff4f81",
+  "theme_color": "#ff4f81",
+  "icons": [
+    {
+      "src": "foto1.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "foto1.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
